@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #121417; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  margin: auto; }
+
+.attribution {
+  max-width: 100%;
+  margin-top: 5rem;
+  color: white;
+  font-size: 1.3rem; }
+  .attribution > a {
+    text-decoration: none;
+    color: #fb7413; }
+  @media screen and (min-width: 280px) and (max-width: 374px) {
+    .attribution {
+      margin: 5rem 1rem;
+      text-align: center; } }
+
+.btn {
+  border-style: none;
+  border-radius: 2rem;
+  height: 4rem;
+  cursor: pointer; }
+  .btn--primary {
+    background-color: #fb7413;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400; }
+    .btn--primary:hover {
+      background-color: white;
+      color: #fb7413;
+      transition: color .4s ease; }
+  .btn--secondary {
+    background-color: #252d37;
+    color: #7c8798; }
+    .btn--secondary:hover {
+      background-color: #7c8798;
+      color: white;
+      transition: color .4s ease; }
+  .btn--circle {
+    border-radius: 50%; }
+  .btn--rating {
+    width: 4rem; }
+    @media screen and (min-width: 280px) and (max-width: 374px) {
+      .btn--rating {
+        height: 3.5rem;
+        width: 3.5rem; } }
+  .btn--active {
+    background-color: #fb7413;
+    color: white; }
+    .btn--active:hover {
+      background-color: #fb7413;
+      color: white;
+      transition: color 2s ease; }
+
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  background: #222933;
+  background: radial-gradient(circle, #222933 0%, #171e28 48%);
+  width: 32.5rem;
+  height: auto;
+  border-radius: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  justify-content: start;
+  align-items: stretch;
+  opacity: 1; }
+  @media screen and (min-width: 280px) and (max-width: 359px) {
+    .rating-box {
+      width: 25.5rem; } }
+  .rating-box__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    background: #222933; }
+    .rating-box__icon > img {
+      height: 1.3rem;
+      width: 1.3rem; }
+
+.rating-box-header {
+  margin-top: 2rem;
+  margin-bottom: 3.5rem; }
+  .rating-box-header__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-align: left; }
+  .rating-box-header__description {
+    font-size: 1.5rem;
+    color: #7c8798;
+    margin-top: 2.5rem;
+    text-align: left;
+    line-height: 2rem; }
+
+.rating-box-score {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem; }
+
+.rating-submit {
+  margin-bottom: 3.2rem; }
+
+.rating-box-hiding {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 4s ease; }
+
+.thank-box {
+  display: flex;
+  flex-direction: column;
+  background: #222933;
+  background: radial-gradient(circle, #222933 0%, #171e28 48%);
+  width: 32.5rem;
+  height: auto;
+  border-radius: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  display: none; }
+  @media screen and (min-width: 280px) and (max-width: 359px) {
+    .thank-box {
+      width: 25.5rem; } }
+
+.thank-box-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 17rem;
+  margin-top: 3rem; }
+  .thank-box-header__image {
+    width: 100%;
+    height: auto; }
+  .thank-box-header__selected-score {
+    background-color: #252d37;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 2.5rem; }
+    .thank-box-header__selected-score > span {
+      color: #fb7413;
+      font-size: 1.3rem; }
+
+.thank-box-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem; }
+  .thank-box-body__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-align: left; }
+  .thank-box-body__description {
+    font-size: 1.5rem;
+    color: #7c8798;
+    margin-top: 2.5rem;
+    text-align: center;
+    line-height: 2rem; }
+
+.thank-box-visible {
+  display: flex;
+  visibility: visible; }

@@ -1,0 +1,55 @@
+.btn{ 
+    border-style: none;
+    border-radius: 2rem;
+    height: 4rem;
+    cursor: pointer;
+
+    &--primary{
+        background-color: $primary-color;
+        text-transform: uppercase;
+        color: $white-color;
+        font-weight: 400;
+      
+
+        &:hover{
+            background-color: $white-color;
+            color: $primary-color;
+            transition: color .4s ease;          
+        }
+    }
+
+    &--secondary{
+        background-color:$dark-blue-color;
+        color: $medium-grey-color;
+       
+        &:hover{
+            background-color: $medium-grey-color;
+            color:$white-color;
+            transition: color .4s ease;
+        }
+    }
+    
+    &--circle{
+        border-radius: 50%;
+    }
+
+    &--rating{
+        width: 4rem;
+        @include media-query(280px, 374px){
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+    }
+
+    &--active{
+        background-color: $primary-color;
+        color: $white-color;
+        //transition: color .4s ease;
+
+        &:hover{
+            background-color: $primary-color;
+            color: $white-color;
+            transition: color 2s ease;
+        }
+    }
+}

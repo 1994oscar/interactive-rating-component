@@ -1,0 +1,15 @@
+{
+  "name": "01-interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "An interactive rating component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:w": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Oscar Zúñiga",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

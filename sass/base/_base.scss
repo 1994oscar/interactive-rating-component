@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; //10px
+}
+
+body{
+    box-sizing: border-box;
+    font-family: $primary-font;
+    background-color: $very-dark-blue-color;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:  auto;
+    margin: auto;
+}
+
+.attribution{
+    max-width: 100%;
+    margin-top: 5rem;
+    color: $white-color;
+    font-size: 1.3rem;
+    > a{
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    @include media-query(280px, 374px){
+        margin: 5rem 1rem;
+        text-align: center;
+    }
+}

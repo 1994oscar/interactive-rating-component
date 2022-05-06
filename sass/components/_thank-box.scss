@@ -1,0 +1,57 @@
+.thank-box{
+    @include card(center, center);
+    visibility: hidden;
+    display: none;
+}
+
+.thank-box-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 17rem;
+    margin-top: 3rem;
+
+    &__image{
+        width: 100%;
+        height: auto;
+    }
+    &__selected-score{
+        background-color: $dark-blue-color;
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        margin-top: 2.5rem;
+
+        >span{
+            color: $primary-color;
+            font-size: 1.3rem;
+        }
+
+    }
+}
+
+.thank-box-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+    &__title{
+        @include card-heading;
+    }
+
+    &__description{
+        @include card-text(center);
+    }
+}
+
+.thank-box-visible{
+    display: flex;
+    visibility: visible;
+}

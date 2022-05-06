@@ -1,0 +1,51 @@
+.rating-box{
+   @include card;
+    opacity: 1;
+    
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-top: 2.5rem;       
+        height: 3.5rem;
+        width: 3.5rem;
+        background: rgb(34,41,51);
+        
+        >img{
+            height: 1.3rem;
+            width: 1.3rem;
+        }
+    }
+}
+
+.rating-box-header{
+    
+    margin-top: 2rem ;
+    margin-bottom: 3.5rem ;
+
+    &__title{
+        @include card-heading;
+     }
+
+    &__description{
+        @include card-text;
+    }
+}
+
+.rating-box-score{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.rating-submit{
+    margin-bottom: 3.2rem;
+}
+
+.rating-box-hiding{
+    display: none;
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 4s ease;    
+}

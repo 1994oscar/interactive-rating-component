@@ -1,0 +1,34 @@
+@mixin card ($j-content: start, $a-item:stretch) {
+    display: flex;
+    flex-direction: column;
+    background: rgb(34,41,51);
+    background: radial-gradient(circle, rgba(34,41,51,1) 0%, rgba(23,30,40,1) 48%);
+    width: 32.5rem;
+    height: auto;
+    border-radius: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    justify-content: $j-content;
+    align-items: $a-item;
+
+  
+
+    @include media-query(280px, 359px){
+        width: 25.5rem;
+    }
+}
+
+@mixin card-heading($t-align:left){
+        font-size: 2rem;
+        font-weight: 700;
+        color: $white-color;
+        text-align: $t-align;
+}
+
+@mixin card-text($t-align:left){
+    font-size: 1.5rem;
+    color: $medium-grey-color;
+    margin-top: 2.5rem; 
+    text-align: $t-align;
+    line-height: 2rem;
+}
