@@ -77,7 +77,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #222933;
-  background: radial-gradient(circle, #222933 0%, #171e28 48%);
+  background: linear-gradient(190deg, #222933 0%, #171e28 48%);
   width: 32.5rem;
   height: auto;
   border-radius: 1rem;
@@ -135,7 +135,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #222933;
-  background: radial-gradient(circle, #222933 0%, #171e28 48%);
+  background: linear-gradient(190deg, #222933 0%, #171e28 48%);
   width: 32.5rem;
   height: auto;
   border-radius: 1rem;
